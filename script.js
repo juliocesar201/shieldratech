@@ -35,14 +35,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Desenvolvedor Web", "Formatação e Matenção de Computadores", "Cabeamos de Redes", "Web Designer", "Limpeza e troca de pasta termica"],
+        strings: ["Desenvolvedor Web", "Formatação e Matenutenção de Computadores", "Cabeamentos de Redes", "Web Designer", "Limpeza e troca de pasta termica"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Desenvolvedor Web", "Formatação e Matenção de Computadores", "Cabeamos de Redes", "Web Designer", "Limpeza e troca de pasta termica"],
+        strings: ["Desenvolvedor Web", "Formatação e Matenutenção de Computadores", "Cabeamentos de Redes", "Web Designer", "Limpeza e troca de pasta termica"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
