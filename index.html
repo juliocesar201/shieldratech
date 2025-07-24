@@ -228,7 +228,7 @@ Tecnologia com responsabilidade e eficiência.</p>
                 </div>
                 <div class="column right">
                     <div class="text">Mensagem</div>
-                    <form method="POST" action="email.php">
+                    <form action="https://formsubmit.co/shieldratech@gmail.com" method="POST">
                         <div class="fields">
                             <div class="field name">
                                 <input class="input" type="text" id="name" name="name" placeholder="Nome" required>
@@ -241,8 +241,12 @@ Tecnologia com responsabilidade e eficiência.</p>
                             <input class="input" type="text" id="assunto" name="assunto" placeholder="Assunto" required>
                         </div>
                         <div class="field textarea">
-                            <textarea class="input" cols="30" rows="10" id="message" name="message" placeholder="Mensagem.."></textarea>
+                            <textarea class="input" cols="30" rows="10" id="message" name="message" placeholder="Mensagem.." required></textarea>
                         </div>
+
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://juliocesar201.github.io/shieldratech/">
+
                         <div class="button-area">
                             <button type="submit" value="Enviar">Enviar Mensagem</button>
                         </div>
