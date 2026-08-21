@@ -108,3 +108,23 @@ $(document).ready(function(){
         }
     });
 });
+
+// Captura de eventos do teclado do notebook
+document.addEventListener('keydown', function(event) {
+    const tecla = event.key;
+
+    if (!isNaN(tecla)) { // Números de 0 a 9
+        calcular(tecla);
+    } else if (['+', '-', '*', '/'].includes(tecla)) { // Operadores
+        calcular(tecla);
+    } else if (tecla === '.' || tecla === ',') { // Ponto decimal
+        calcular('.');
+    } else if (tecla === 'Enter' || tecla === '=') { // Resultado
+        event.preventDefault();
+        resultado();
+    } else if (tecla === 'Backspace') { // Apagar um caractere
+        voltar();
+    } else if (tecla === 'Escape' || tecla.toLowerCase() === 'c') { // Limpar tudo
+        apagarTudo();
+    }
+});
