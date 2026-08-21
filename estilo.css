@@ -3,7 +3,62 @@
     src: url(./fonte/digital-7\ \(mono\ italic\).ttf);
 }
 
-/* Visor ajustado para não quebrar com números grandes */
+/* --- ESTILO DA NAVBAR (MENU SUPERIOR) --- */
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 15px 0;
+    background: #2e4f3e !important; /* Verde Musgo Fixo */
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logo a span {
+    color: #76ff03 !important;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+    color: #76ff03 !important;
+}
+
+/* --- ESTRUTURA E FUNDO DA PÁGINA --- */
+section.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+/* --- ESTILO DA CALCULADORA E VISOR --- */
 #visor {
     font-family: calculadora, monospace;
     font-size: 32px;
@@ -48,6 +103,7 @@
     box-sizing: content-box;
 }
 
+/* --- BOTÕES DA CALCULADORA --- */
 .buttonArea {
     display: grid;
     justify-content: center;
