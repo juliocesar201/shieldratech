@@ -11,9 +11,32 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Navbar fixa sempre com a cor verde musgo */
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Container de Largura Máxima Padronizado */
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: 0 auto;
+}
+
+/* NAVBAR FIXA E ALINHADA */
 .navbar {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 999;
     padding: 15px 0;
@@ -56,14 +79,14 @@ html {
     color: #76ff03;
 }
 
-/* Container principal da tela */
+/* ESTRUTURA PRINCIPAL */
 section.home {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #000000;
     min-height: 100vh;
-    padding-top: 100px;
+    padding-top: 100px; /* Evita que a navbar cubra o conteúdo */
 }
 
 .container {
@@ -86,7 +109,7 @@ textarea {
     resize: none;
 }
 
-/* Botões trocados do tom Vinho para Verde Musgo */
+/* BOTÕES E TÍTULOS EM VERDE MUSGO */
 button {
     margin: 5px;
     padding: 10px 15px;
@@ -104,7 +127,6 @@ button:hover {
     background-color: #3d6852;
 }
 
-/* Título em Verde Musgo */
 h2 {
     color: #2e4f3e;
     margin-bottom: 15px;
@@ -121,4 +143,46 @@ footer {
 
 footer span a {
     color: #76ff03;
+}
+
+/* MEDIA QUERIES (RESPONSIVIDADE) */
+@media (max-width: 991px) {
+    .max-width {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 947px) {
+    .menu-btn {
+        display: block;
+        color: #fff;
+        font-size: 23px;
+        cursor: pointer;
+    }
+
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu.active {
+        left: 0;
+    }
+
+    .navbar .menu li {
+        display: block;
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
 }
