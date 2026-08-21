@@ -103,7 +103,7 @@ section .title::after {
 
 .navbar.sticky {
     padding: 15px 0;
-    background: #76ff03;
+    background: #2e4f3e;
 }
 
 .navbar .max-width {
@@ -142,7 +142,7 @@ section .title::after {
 }
 
 .navbar .menu li a:hover {
-    color: #76ff03;
+    color: #a3e635;
 }
 
 .navbar.sticky .menu li a:hover {
